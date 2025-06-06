@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 改這裡：頁面標題 -->
+    <title>CBH Group - 供應商評估</title>
+    <style>
+        body {
+            font-family: 'Microsoft JhengHei', Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .slide-container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #2c5530 0%, #4a7c59 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+            position: relative;
+        }
+        
+        .company-name {
+            font-size: 2.8em;
+            font-weight: 700;
+            margin: 0 0 10px 0;
+        }
+        
+        .grade-badge {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            background: rgba(255,255,255,0.2);
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-weight: 700;
+            font-size: 1.2em;
+            border: 2px solid white;
+        }
+        
+        .talgine {
+            font-size: 1.2em;
+            opacity: 0.9;
+            margin: 0;
+        }
+        
+        .content {
+            padding: 30px;
+        }
+        
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .info-card {
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            border: 1px solid #dee2e6;
+        }
+        
+        .info-value {
+            font-size: 1.8em;
+            font-weight: 700;
+            color: #2c5530;
+            margin: 0 0 5px 0;
+        }
+        
+        .info-label {
+            color: #6c757d;
+            font-weight: 500;
+            font-size: 0.9em;
+        }
+        
+        .contact-section {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 30px;
+        }
+        
+        .contact-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        
+        .contact-row:last-child {
+            margin-bottom: 0;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .contact-icon {
+            font-size: 1.2em;
+        }
+        
+        .contact-text {
+            font-weight: 600;
+            color: #2c5530;
+        }
+        
+        .button-row {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .contact-btn {
+            background: linear-gradient(135deg, #4a7c59, #2c5530);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: transform 0.3s ease;
+            flex: 1;
+            text-align: center;
+        }
+        
+        .contact-btn:hover {
+            transform: translateY(-2px);
+        }
+        
+        .feature-box {
+            background: linear-gradient(135deg, #fff3cd, #ffeaa7);
+            border: 2px dashed #ffc107;
+            border-radius: 10px;
+            padding: 30px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        .feature-title {
+            color: #856404;
+            font-size: 1.8em;
+            font-weight: 700;
+            margin: 0 0 20px 0;
+        }
+        
+        .feature-placeholder {
+            background: white;
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+            padding: 40px 20px;
+            color: #6c757d;
+            font-style: italic;
+            min-height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        
+        .recommendation {
+            background: linear-gradient(135deg, #d4edda, #c3e6cb);
+            border-left: 5px solid #28a745;
+            border-radius: 10px;
+            padding: 20px;
+        }
+        
+        .recommendation h4 {
+            color: #155724;
+            margin: 0 0 10px 0;
+            font-size: 1.2em;
+        }
+        
+        .recommendation p {
+            color: #155724;
+            margin: 0;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <!-- 改這裡：等級徽章 -->
+            <div class="grade-badge">A1</div>
+            <!-- 改這裡：公司名稱 -->
+            <h1 class="company-name">CBH Group</h1>
+            <!-- 改這裡：一句話特色 -->
+            <p class="tagline">澳洲最大農民合作社，西澳小麥領導者</p>
+        </div>
+        
+        <div class="content">
+            <!-- 核心資訊 -->
+            <div class="info-grid">
+                <div class="info-card">
+                    <!-- 改這裡：等級 -->
+                    <div class="info-value">A1級</div>
+                    <div class="info-label">供應商等級</div>
+                </div>
+                <div class="info-card">
+                    <!-- 改這裡：年出口量 -->
+                    <div class="info-value">700萬+噸</div>
+                    <div class="info-label">年出口量</div>
+                </div>
+                <div class="info-card">
+                    <!-- 改這裡：營運地區 -->
+                    <div class="info-value">西澳大利亞</div>
+                    <div class="info-label">營運地區</div>
+                </div>
+                <div class="info-card">
+                    <!-- 改這裡：主要產品 -->
+                    <div class="info-value">軟白小麥、穀物</div>
+                    <div class="info-label">主要產品</div>
+                </div>
+            </div>
+            
+            <!-- 聯絡資訊 -->
+            <div class="contact-section">
+                <!-- 聯絡資訊區塊修改 -->
+                <div class="contact-row">
+                    <div class="contact-item">
+                        <span class="contact-icon">👤</span>
+                        <!-- 改這裡：聯繫人姓名 (業務聯絡人) -->
+                        <span class="contact-text">Wilson Kong (聯繫人)</span>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📧</span>
+                        <!-- 改這裡：聯繫人Email -->
+                        <span class="contact-text">wilson.kong@cbh.com.au</span>
+                    </div>
+                </div>
+                <div class="contact-row">
+                    <div class="contact-item">
+                        <span class="contact-icon">👨‍💼</span>
+                        <!-- 改這裡：負責人姓名 (官方負責人/CEO) -->
+                        <span class="contact-text">Ben Macnamara (負責人)</span>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">🌐</span>
+                        <!-- 改這裡：官方網站 -->
+                        <span class="contact-text">www.cbh.com.au</span>
+                    </div>
+                </div>
+                </div>
+                <div class="button-row">
+                    <!-- 改這裡：聯絡頁面網址 -->
+                    <a href="https://www.cbh.com.au/contact" class="contact-btn" target="_blank">聯絡頁面</a>
+                    <!-- 改這裡：產品頁面網址 -->
+                    <a href="https://ik.imagekit.io/BTLiao/Wheat_grade/CBH%20Wheat%20grade/CBH%20Wheat%20standard.pdf?updatedAt=1749195349675" class="contact-btn" target="_blank">小麥產品</a>
+                </div>
+            </div>
+            
+            <!-- 公司特色預留方框 -->
+            <div class="feature-box">
+                <h3 class="feature-title">🏢 公司特色</h3>
+                <div style="display: grid; gap: 15px;">
+                    <div style="background: white; border-radius: 8px; padding: 20px; border-left: 4px solid #28a745;">
+                        <h5 class="talgine"; style="color: #28a745; margin: 0 0 8px 0; font-weight: 700;">🏢 澳洲最大農民合作社</h5>
+                        <p style="margin: 0; color: #495057; line-height: 1.4;">由約3,500家西澳穀物農戶共同擁有控制，從農場到市場的完整供應鏈整合，確保糧源穩定與價格優勢</p>
+                    </div>
+                    
+                    <div style="background: white; border-radius: 8px; padding: 20px; border-left: 4px solid #ffc107;">
+                        <h5 class="talgine"; style="color: #ff8b07; margin: 0 0 8px 0; font-weight: 700;">🌾 西澳小麥出口領導者</h5>
+                        <p style="margin: 0; color: #495057; line-height: 1.4;">西澳佔澳洲最大小麥出口量，獨家生產亞洲市場高需求的麵條專用小麥品種(ANW/APWN)，品質享譽國際</p>
+                    </div>
+                    
+                    <div style="background: white; border-radius: 8px; padding: 20px; border-left: 4px solid #17a2b8;">
+                        <h5 class="talgine"; style="color: #17a2b8; margin: 0 0 8px 0; font-weight: 700;">🚢 完整供應鏈服務</h5>
+                        <p style="margin: 0; color: #495057; line-height: 1.4;">擁有4個散裝穀物出口港口，年處理能力超過1,500萬噸，提供從收購、儲存、運輸到出口的一條龍服務</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
